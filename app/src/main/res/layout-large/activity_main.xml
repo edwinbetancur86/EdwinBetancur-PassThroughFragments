@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edwinb.edwinbetancur_passthroughfragments.MainActivity"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:name="com.edwinb.edwinbetancur_passthroughfragments.F2"
+        android:layout_height="855dp"
+        android:id="@+id/forF2"
+        android:layout_width="260dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:name="com.edwinb.edwinbetancur_passthroughfragments.F1"
+        android:layout_height="0dp"
+        android:id="@+id/forF1"
+        android:layout_width="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/forF2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/forF2"
+        app:layout_constraintLeft_toRightOf="@+id/forF2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="9dp">
+
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
